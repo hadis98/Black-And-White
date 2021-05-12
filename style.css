@@ -172,6 +172,14 @@ p {
   background-color: rgba(128, 128, 128, 0.171);
   border-radius: 10px 10px 10px 10px;
 }
+.resume-btn{
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+}
 #prices {
   margin: 0 auto;
   width: 70%;
@@ -215,6 +223,11 @@ th {
   color: whitesmoke;
 }
 
+.signUp-btn {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+}
 form p {
   width: 100%;
 }
@@ -226,14 +239,41 @@ form p {
   width: 70%;
   margin: 0 auto;
 }
+#form input {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+#send-message {
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+}
 #send-message:hover {
   background-color: gray;
   color: white;
+  outline: none;
+  border: none;
 }
 #prices {
   margin: 0 auto;
 }
-
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media__container {
+  width: 100%;
+}
+.social-media__links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.social-media__links li {
+    margin-right:1rem ;
+}
 #gotoTop {
   position: fixed;
   bottom: 10px;
