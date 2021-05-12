@@ -6,7 +6,9 @@ body {
   margin: 0px auto;
   background-color: black;
 }
-
+.text-center{
+    text-align: center;
+}
 #welcome {
   color: white;
   text-transform: capitalize;
@@ -73,10 +75,22 @@ p {
   text-orientation: sideways;
   text-transform: capitalize;
 }
-#flowers {
-  margin-left: 0%;
-  margin-right: 0%;
+.photos__container{
+    width: 60%;
+    margin: 0 auto;
 }
+.photos__container img{
+    width: 50%;
+    height: auto;
+}
+/* #flowers,#nature {
+    width: 60%;
+margin: 0 auto;
+}
+#flowers img,#nature img{
+    width: 50%;
+    height: auto;
+} */
 .width {
   width: 70%;
   margin: 0 auto;
@@ -104,6 +118,16 @@ p {
 .font-size {
   font-size: 0;
 }
+#nature{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .nature-images img{
+    height: 100%;
+} */
 
 #nature1 {
   border-radius: 30px 0px 0px 0px;

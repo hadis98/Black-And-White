@@ -13,38 +13,43 @@
 </head>
 
 <body>
-    <h1 id="welcome" align="center"><span> I'm John Doe.</span> </h1>
-    <h5 align="center">Photographer and Web Designer.</h5>
+    <h1 id="welcome" class="text-center"><span> I'm John Doe.</span> </h1>
+    <h5 class="text-center">Photographer and Web Designer.</h5>
     <br><br>
-    <div id="personal" align="center">
+    <div id="personal" class="text-center">
         <img src="./images/jacob-mejicanos-D14VNyYE160-unsplash (1).jpg" alt="main-photo" id="main">
     </div>
-    <div id="colection">
-        <h2 align="center">A Collection Of My Photos</h2>
+    <div id="colection" class="text-center">
+        <h2>A Collection Of My Photos</h2>
     </div>
 
     <div id="album">
-        <p align="center"><span id="span-album">my albums  </span></p>
+        <p ><span id="span-album">my albums  </span></p>
         <a href="#main-flowers">Flowers</a>
         <a href="#main-nature">Nature</a>
         <a href="#main-people">People</a>
     </div>
-    <h2 id="main-flowers" align="center"><span >Flowers</span></h2>
-    <div id="flowers" class="font-size" align="center">
+    <h2 id="main-flowers" ><span >Flowers</span></h2>
+    <div id="flowers" class="font-size photos__container" >
         <img src="images/flowers/ryan-song-ttCNLEiIvjM-unsplash.jpg" alt="1" width="640px" height="800px" id="flower1">
         <img src="images/flowers/anca-gabriela-zosin-OYEsm66ynm4-unsplash.jpg" alt="2" width="640px" height="800px" id="flower2">
         <img src="images/julia-kadel-8PyMrTiVK4E-unsplash_40.jpg" alt="3" width="640px" height="800px" id="flower3">
         <img src="images/flowers/priscilla-du-preez-5QQ-YCp0beM-unsplash.jpg" alt="4 " width="640px " height="800px" id="flower4">
     </div>
-    <h2 id="main-nature" align="center"> <span">Nature</span></h2>
-    <div id="nature" class="font-size" align="center">
-        <img src="images/nature/lucas-davies-8T1rL97YY84-unsplash.jpg" alt="1" width="640px" height="800px" id="nature1">
-        <img src="images/nature/val-toch-kMDCIX31EMs-unsplash.jpg" alt="2" width="640px" height="800px" id="nature2">
-        <img src="images/nature/nathan-dumlao-ciO5L8pin8A-unsplash.jpg" alt="3" width="640px" height="800px" id="nature3">
-        <img src="images/nature/taylor-simpson-U6H-6J6-KmM-unsplash.jpg" alt="4 " width="640px " height="800px" id="nature4">
+    <h2 id="main-nature" > <span">Nature</span></h2>
+    <div id="nature" class="font-size photos__container">
+        <div class="nature-images">
+            <img src="images/nature/lucas-davies-8T1rL97YY84-unsplash.jpg" alt="1" width="640px" height="800px" id="nature1">
+            <img src="images/nature/val-toch-kMDCIX31EMs-unsplash.jpg" alt="2" width="640px" height="800px" id="nature2">
+        </div>
+
+        <div class="nature-images">
+            <img src="images/nature/nathan-dumlao-ciO5L8pin8A-unsplash.jpg" alt="3" width="640px" height="800px" id="nature3"> 
+            <img src="images/nature/taylor-simpson-U6H-6J6-KmM-unsplash.jpg" alt="4 " width="640px " height="800px" id="nature4">
+        </div>
     </div>
-    <h2 id="main-people" align="center"><span">People</span></h2>
-    <div id="people" class="font-size" align="center">
+    <h2 id="main-people"><span">People</span></h2>
+    <div id="people" class="font-size photos__container">
         <img src="images/human/omid-armin-xWVyLLUztv0-unsplash.jpg" alt="1" width="640px" height="800px" id="people1">
         <img src="images/human/charles-gaudreault-qmTQW6aMNZU-unsplash.jpg" alt="2" width="640px" height="800px" id="people2">
         <img src="images/human/joshua-fuller-07DnduZvZ28-unsplash.jpg" alt="3" width="640px" height="800px" id="people3">
@@ -131,7 +136,7 @@
             </div>
         </div>
         <button class="resume-btn"><i class="fas fa-download "> Download Resume</i></button> 
-        <h2 align="center">My Prices</h2>
+        <h2 class="text-center">My Prices</h2>
     </div>
         <div id="prices"> 
             <div id="table1">
