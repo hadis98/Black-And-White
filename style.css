@@ -116,8 +116,8 @@ p {
   margin: 0 auto;
   width: 70%;
 }
-#about hr{
-  width: 9rem;
+#about hr,#contact hr{
+  width: 10rem;
 }
 
 .about-name {
@@ -135,10 +135,15 @@ p {
 .skills-title {
   font-size: x-large;
 }
+.skill-text{
+  letter-spacing: 5px;
+}
 .skills-lists {
   margin-top: 1.5rem;
 }
-
+.skills-lists i{
+  padding: 00.5rem;
+}
 .skills-list {
   background-color: rgba(112, 128, 144, 0.301);
   border-radius: 0.5rem;
@@ -184,7 +189,6 @@ p {
   margin: 3rem auto;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   background-color: gainsboro;
   height: 10rem;
   border-radius: 0.5rem;
@@ -241,7 +245,7 @@ th {
   font-size: 1.5rem;
 }
 td {
-  padding: 20px 20px;
+  padding: 1.5rem;
 }
 th {
   padding: 3rem;
@@ -265,6 +269,14 @@ th {
 }
 .contact-header {
   color: white;
+}
+.contact-label{
+  color:whitesmoke; font-size: 24px;
+}
+.contact-text{
+  color: white;
+  font-size: medium;
+  font-weight: 800;
 }
 #form {
   width: 70%;
@@ -335,7 +347,7 @@ th {
   background-color: black;
   padding: 10px;
 }
-#end {
+#gotoEnd {
   position: fixed;
   top: 10px;
   right: 5px;
@@ -345,7 +357,7 @@ th {
   background-color: black;
   padding: 10px;
 }
-#end:hover {
+#gotoEnd:hover {
   background-color: white;
   color: black;
 }
@@ -386,7 +398,10 @@ th {
 #menu p {
   margin: 0px;
 }
-
+.menu-label{
+  color: whitesmoke;
+   font-size: 36px;
+}
 
 input:focus,
 textarea:focus {
@@ -408,7 +423,7 @@ textarea:focus {
     position: relative;
     display: none;
   }
-  #about ,#prices{
+  #about ,#prices,#contact,#form{
     width: 90%;
   }
   .photos__container {
@@ -435,6 +450,11 @@ textarea:focus {
     font-size: medium;
     padding: 0.5rem;
   }
+  #table1,
+  #table2 {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 557px) {
@@ -443,11 +463,6 @@ textarea:focus {
   }
   #about {
     width: 90%;
-  }
-  #table1,
-  #table2 {
-    width: 80%;
-    margin: 0 auto;
   }
   #prouds {
     flex-direction: column;
