@@ -200,12 +200,23 @@ margin: 0 auto;
   outline: none;
 }
 #prouds {
-  margin: 0 auto;
+  margin: 3rem auto;
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
   background-color: gainsboro;
-  height: 158px;
+  height: 10rem;
+  /* border-start-end-radius: 0.5rem; */
+}
+#prouds div{
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.gray-background{
+  background-color: grey;
 }
 #prices {
   margin: 0 auto;
@@ -382,11 +393,14 @@ textarea:focus {
 }
 
 @media (max-width: 967px) {
+  #about{
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
   #contact,
-  #form {
+  #form,#about {
     width: 90%;
   }
   #form input {
@@ -404,6 +418,10 @@ textarea:focus {
       width: 100%;
       border-radius:1rem;
   }
+  #prouds div{
+    font-size: medium;
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 557px) {
@@ -420,6 +438,7 @@ textarea:focus {
   }
   #prouds{
       flex-direction: column;
+      height: auto;
   }
   /* #contact{
         text-align: center;
