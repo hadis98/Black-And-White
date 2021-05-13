@@ -6,8 +6,8 @@ body {
   margin: 0px auto;
   background-color: black;
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 #welcome {
   color: white;
@@ -57,12 +57,6 @@ a {
   color: whitesmoke;
 }
 
-a:hover {
-  color: black;
-  background-color: rgb(202, 208, 214);
-  display: inline-block;
-}
-
 h1,
 h2,
 h5 {
@@ -75,13 +69,13 @@ p {
   text-orientation: sideways;
   text-transform: capitalize;
 }
-.photos__container{
-    width: 60%;
-    margin: 0 auto;
+.photos__container {
+  width: 60%;
+  margin: 0 auto;
 }
-.photos__container img{
-    width: 50%;
-    height: auto;
+.photos__container img {
+  width: 50%;
+  height: auto;
 }
 /* #flowers,#nature {
     width: 60%;
@@ -118,12 +112,13 @@ margin: 0 auto;
 .font-size {
   font-size: 0;
 }
-#nature{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+#nature {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 /* .nature-images img{
     height: 100%;
@@ -196,13 +191,21 @@ margin: 0 auto;
   background-color: rgba(128, 128, 128, 0.171);
   border-radius: 10px 10px 10px 10px;
 }
-.resume-btn{
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    padding: 0.8rem 1rem;
-    border: none;
-    outline: none;
+.resume-btn {
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+}
+#prouds {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: gainsboro;
+  height: 158px;
 }
 #prices {
   margin: 0 auto;
@@ -212,7 +215,7 @@ margin: 0 auto;
 #table-1,
 #table-2 {
   background-color: darkgray;
-  width: 500px;
+  width: 100%;
   display: inline-block;
 }
 
@@ -268,6 +271,10 @@ form p {
   border: none;
   padding: 0.5rem 1rem;
 }
+#message {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
 #send-message {
   border-radius: 0.5rem;
   border: none;
@@ -281,6 +288,9 @@ form p {
 }
 #prices {
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .main-footer {
   display: flex;
@@ -296,7 +306,10 @@ form p {
   justify-content: center;
 }
 .social-media__links li {
-    margin-right:1rem ;
+  margin-right: 1rem;
+}
+.social-media__links i:hover {
+  font-weight: bolder;
 }
 #gotoTop {
   position: fixed;
@@ -356,4 +369,59 @@ button:hover {
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+@media (max-width: 1200px) {
+  #menu {
+    position: relative;
+    display: none;
+  }
+  #prices {
+    width: 90%;
+  }
+}
+
+@media (max-width: 967px) {
+}
+
+@media (max-width: 768px) {
+  #contact,
+  #form {
+    width: 90%;
+  }
+  #form input {
+    width: 100%;
+  }
+  #prices{
+      flex-direction: column;
+  }
+  .photos__container{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+  }
+  .photos__container img{
+      width: 100%;
+      border-radius:1rem;
+  }
+}
+
+@media (max-width: 557px) {
+  #prices {
+    width: 100%;
+  }
+  #about{
+      width: 90%;
+  }
+  #table1,
+  #table2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #prouds{
+      flex-direction: column;
+  }
+  /* #contact{
+        text-align: center;
+    } */
 }
