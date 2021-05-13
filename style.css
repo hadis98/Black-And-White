@@ -116,6 +116,9 @@ p {
   margin: 0 auto;
   width: 70%;
 }
+#about hr{
+  width: 9rem;
+}
 
 .about-name {
   color: white;
@@ -144,7 +147,6 @@ p {
   background-color: rgba(240, 255, 246, 0.794);
   text-align: center;
   padding: 0.5rem;
-  /* padding-top: 13px; */
   border-radius: 0.5rem;
 }
 .percentage-90 {
@@ -242,7 +244,7 @@ td {
   padding: 20px 20px;
 }
 th {
-  padding: 40px 40px;
+  padding: 3rem;
 
   background-color: grey;
   color: whitesmoke;
@@ -355,23 +357,34 @@ th {
   position: fixed;
   left: 0px;
   top: 0px;
-  width: 200px;
+  width: 12%;
   height: 100%;
   background-color: rgba(128, 128, 128, 0.212);
   text-align: center;
   font-size: small;
 }
-#menu a {
-  display: block;
+#menu img{
+  width: 100%;
 }
-#menu a:hover {
+#menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#menu ul li{
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+#menu li:hover {
   background-color: gray;
 }
-#menu hr {
-  margin: 0 0;
+
+#menu a{
+  display: inline-block;
+  width: 100%;
 }
 #menu p {
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 
@@ -381,12 +394,9 @@ textarea:focus {
 }
 
 @media (max-width: 1200px) {
-  #menu {
-    position: relative;
-    display: none;
-  }
+
   #prices {
-    width: 90%;
+    width: 80%;
   }
   .resumeBtn__container {
     justify-content: center;
@@ -394,7 +404,11 @@ textarea:focus {
 }
 
 @media (max-width: 967px) {
-  #about {
+  #menu {
+    position: relative;
+    display: none;
+  }
+  #about ,#prices{
     width: 90%;
   }
   .photos__container {
