@@ -62,7 +62,7 @@
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-
+<!-- 
         <div id="interests">
             <p style="background-color: rgba(128, 128, 128, 0.993);height: 40px;padding-top: 5px;"> <i class="fas fa-star">My Interests</i><i class="fas fa-star"></i></p>
             <ul>
@@ -91,32 +91,32 @@
                 <li><strong>travel</strong></li>
                 <li> <strong>movies</strong></li>
             </ul>
-        </div>
-        <p> <i class="fas fa-bookmark">im really good at:</i></p>
+        </div> -->
+        
         
         <div id="skills">
+            <p class="skills-title">im really good at:</p>
             <div>
-                <i class="fas fa-images" style="color: whitesmoke; font-size: 24px;"><span style="letter-spacing: 5px;">Photography</span> </i> 
-                <div style="background-color: rgba(112, 128, 144, 0.301);height: 40px;">
-                    <div style="background-color: rgba(240, 255, 246, 0.794);height: 40px;width: 90%;text-align: center;line-height: 25px;padding-top: 13px;">90%</div>
+                <i class="fas fa-images skills-list-label"><span style="letter-spacing: 5px;">Photography</span> </i> 
+                <div class="skills-list">
+                    <div class="skills-list-percentage">90%</div>
                 </div>
 
             </div>
             
             <div>
-                <i class="fas fa-paint-brush" style="color: whitesmoke; font-size: 24px;"><span style="letter-spacing: 5px;">Web Designe</span></i> 
-                <div style="background-color: rgba(112, 128, 144, 0.301);height: 40px;">
-                    <div style="background-color: rgba(240, 255, 246, 0.794);height: 40px;width: 94%;text-align: center;line-height: 25px;padding-top: 13px;">94%</div>
+                <i class="fas fa-paint-brush skills-list-label"><span style="letter-spacing: 5px;">Web Designe</span></i> 
+                <div class="skills-list">
+                    <div class="skills-list-percentage">94%</div>
                 </div>
 
             </div>
             
             <div>
-                <i class="fas fa-biking" style="color: whitesmoke; font-size: 24px;"><span style="letter-spacing: 5px;">Biking</span></i>
-                <div style="background-color: rgba(112, 128, 144, 0.301);height: 40px;">
-                    <div style="background-color: rgba(240, 255, 246, 0.794);height: 40px;width: 99%;text-align: center;line-height: 25px;padding-top: 13px;">99%</div>
+                <i class="fas fa-biking skills-list-label"><span style="letter-spacing: 5px;">Biking</span></i>
+                <div class="skills-list">
+                    <div class="skills-list-percentage">99%</div>
                 </div>
-
             </div>
         </div>
         
@@ -138,8 +138,8 @@
         <h2 class="text-center">My Prices</h2>
     </div>
         <div id="prices"> 
-            <div id="table1">
-                <table id="table-1">
+            <div id="table1" class="price-table__container">
+                <table id="table-1" class="price-table">
                     <tr>
                         <th>Basic</th>
                     </tr>
@@ -157,15 +157,19 @@
                     </tr>
                     <tr>
                         <td>
-                            <h2 style="font-size: 2em;color: black;"> <b>$10</b></h2> <span>per month</span></td>
+                            <h2 class="price-per-month"> <b>$10</b></h2> <span>per month</span></td>
                     </tr>
                     <tr>
-                        <td><button class="signUp-btn" style="width: 150px;padding: 10px 10px; "><b>sign up</b></button></td>
+                        <td>
+                            <button class="signUp-btn" >
+                                <b>sign up</b>
+                            </button>
+                        </td>
                     </tr>
                 </table>
             </div>   
-            <div id="table2">
-                <table id="table-2">
+            <div id="table2" class="price-table__container">
+                <table id="table-2" class="price-table">
                     <tr>
                         <th>Pro</th>
                     </tr>
@@ -183,10 +187,16 @@
                     </tr>
                     <tr>
                         <td>
-                            <h2 style="font-size: 2em;color: black;"> <b>$10</b></h2> <span>per month</span></td>
+                            <h2 class="price-per-month"> <b>$10</b>
+                            </h2> <span>per month</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><button class="signUp-btn" style="width: 150px;padding: 10px 10px; "><b>sign up</b></button></td>
+                        <td>
+                            <button class="signUp-btn">
+                                <b>sign up</b>
+                            </button>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -207,7 +217,9 @@
                 <p><input type="email" placeholder="Email" required="required"></p>
                 <p><input type="text" placeholder="Subject"></p>
                 <p><textarea name="message" id="message" cols="30" rows="10"style="width: 100%;" placeholder="write me a message:)"></textarea></p>
-                <p align="center" ><input type="submit" value="send Message"id="send-message"></p>
+                <p class="text-center">
+                    <input type="submit" value="send Message"id="send-message">
+                </p>
                 
             </form>
         </div>
@@ -215,22 +227,22 @@
                     <div class="social-media__container">
                         <ul class="social-media__links">
                             <li>
-                                <a href="#"><i class="fa fa-facebook-official" style="color: grey;font-size: 36px"></i></a>  
+                                <a href="#"><i class="fa fa-facebook-official social-media__link"></i></a>  
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram" style="color: grey;font-size: 36px;"></i></a> 
+                                <a href="#"><i class="fa fa-instagram social-media__link"></i></a> 
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-snapchat" style="color: grey;font-size: 36px;"></i></a>
+                                <a href="#"><i class="fa fa-snapchat social-media__link"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-pinterest-p" style="color: grey;font-size: 36px;"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p social-media__link"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-twitter" style="color: grey;font-size: 36px;"></i></a>
+                                <a href="#"><i class="fa fa-twitter social-media__link"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-linkedin" style="color: grey;font-size: 36px;"></i></a>
+                                <a href="#"><i class="fa fa-linkedin social-media__link"></i></a>
                             </li>
                         </ul> 
                     </div>

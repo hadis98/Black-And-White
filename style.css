@@ -187,9 +187,23 @@ margin: 0 auto;
   text-transform: capitalize;
 }
 
-#skills {
-  background-color: rgba(128, 128, 128, 0.171);
-  border-radius: 10px 10px 10px 10px;
+.skills-title{
+  font-size: large;
+}
+.skills-list {
+  background-color: rgba(112, 128, 144, 0.301);
+}
+.skills-list-percentage {
+  background-color: rgba(240, 255, 246, 0.794);
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 13px;
+}
+.skills-list-label{
+  color: whitesmoke;
+   font-size: 24px;
 }
 .resume-btn {
   border-radius: 0.5rem;
@@ -208,14 +222,14 @@ margin: 0 auto;
   height: 10rem;
   /* border-start-end-radius: 0.5rem; */
 }
-#prouds div{
+#prouds div {
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: large;
 }
-.gray-background{
+.gray-background {
   background-color: grey;
 }
 #prices {
@@ -223,33 +237,38 @@ margin: 0 auto;
   width: 70%;
   text-align: center;
 }
-#table-1,
-#table-2 {
-  background-color: darkgray;
+.price-table__container{
   width: 100%;
-  display: inline-block;
+}
+.price-table{
+  background-color: darkgray;
 }
 
+.price-per-month{
+  font-size: 2em;
+  color: black;
+}
 #table-1:hover {
   background-color: #d6d5d5;
 }
 #table-2:hover {
   background-color: #d6d5d5;
 }
-#table1,
+/* #table1,
 #table2 {
   display: inline-block;
   width: 500px;
   margin: 0 20px;
+} */
+table{
+  width: 80%;
 }
 table,
 td,
 th {
   border: rgba(8, 5, 5, 0.835) solid 1px;
   border-collapse: collapse;
-
   text-align: center;
-  width: 500px;
 }
 td {
   padding: 20px 20px;
@@ -265,6 +284,8 @@ th {
   border: none;
   border-radius: 0.5rem;
   outline: none;
+  width: 10rem;
+  padding: 0.8rem;
 }
 form p {
   width: 100%;
@@ -318,6 +339,10 @@ form p {
 }
 .social-media__links li {
   margin-right: 1rem;
+}
+.social-media__link{
+  color: grey;
+  font-size: 36px;
 }
 .social-media__links i:hover {
   font-weight: bolder;
@@ -393,32 +418,36 @@ textarea:focus {
 }
 
 @media (max-width: 967px) {
-  #about{
+  #about {
     width: 90%;
+  }
+  .photos__container {
+    width: 70%;
   }
 }
 
 @media (max-width: 768px) {
   #contact,
-  #form,#about {
+  #form,
+  #about {
     width: 90%;
   }
   #form input {
     width: 100%;
   }
-  #prices{
-      flex-direction: column;
+  #prices {
+    flex-direction: column;
   }
-  .photos__container{
-      width: 90%;
-      display: flex;
-      flex-direction: column;
+  .photos__container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
   }
-  .photos__container img{
-      width: 100%;
-      border-radius:1rem;
+  .photos__container img {
+    width: 100%;
+    border-radius: 1rem;
   }
-  #prouds div{
+  #prouds div {
     font-size: medium;
     padding: 0.5rem;
   }
@@ -428,19 +457,16 @@ textarea:focus {
   #prices {
     width: 100%;
   }
-  #about{
-      width: 90%;
+  #about {
+    width: 90%;
   }
   #table1,
   #table2 {
     width: 80%;
     margin: 0 auto;
   }
-  #prouds{
-      flex-direction: column;
-      height: auto;
+  #prouds {
+    flex-direction: column;
+    height: auto;
   }
-  /* #contact{
-        text-align: center;
-    } */
 }
