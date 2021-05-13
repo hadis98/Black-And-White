@@ -1,12 +1,13 @@
-<!DOKTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>My Main WebSite</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d8428dc404.js" crossorigin="anonymous"></script>
@@ -15,50 +16,54 @@
 <body>
     <h1 id="welcome" class="text-center"><span> I'm John Doe.</span> </h1>
     <h5 class="text-center">Photographer and Web Designer.</h5>
-    <div id="personal" class="text-center">
+    <div id="personal-photo" class="text-center">
         <img src="./images/jacob-mejicanos-D14VNyYE160-unsplash (1).jpg" alt="main-photo" id="main">
     </div>
-    <div id="colection" class="text-center">
-        <h2>A Collection Of My Photos</h2>
-    </div>
-
+        <h2 class="collection-header text-center">A Collection Of My Photos</h2>
     <div id="album">
-        <p ><span id="span-album">my albums  </span></p>
         <a href="#main-flowers">Flowers</a>
         <a href="#main-nature">Nature</a>
         <a href="#main-people">People</a>
     </div>
     <h2 id="main-flowers" class="text-center"><span >Flowers</span></h2>
     <div id="flowers" class="font-size photos__container" >
-        <img src="images/flowers/ryan-song-ttCNLEiIvjM-unsplash.jpg" alt="1" width="640px" height="800px" id="flower1">
-        <img src="images/flowers/anca-gabriela-zosin-OYEsm66ynm4-unsplash.jpg" alt="2" width="640px" height="800px" id="flower2">
-        <img src="images/julia-kadel-8PyMrTiVK4E-unsplash_40.jpg" alt="3" width="640px" height="800px" id="flower3">
-        <img src="images/flowers/priscilla-du-preez-5QQ-YCp0beM-unsplash.jpg" alt="4 " width="640px " height="800px" id="flower4">
+        <img src="images/flowers/ryan-song-ttCNLEiIvjM-unsplash.jpg" alt="1" id="flower1" class="border-top-left-radius" >
+        <img src="images/flowers/anca-gabriela-zosin-OYEsm66ynm4-unsplash.jpg" alt="2" id="flower2" class="border-top-right-radius">
+        <img src="images/julia-kadel-8PyMrTiVK4E-unsplash_40.jpg" alt="3" id="flower3" class="border-bottom-left-radius">
+        <img src="images/flowers/priscilla-du-preez-5QQ-YCp0beM-unsplash.jpg" alt="4" id="flower4"
+        class="border-bottom-right-radius">
     </div>
     <h2 id="main-nature" class="text-center"> <span">Nature</span></h2>
     <div id="nature" class="font-size photos__container">
-        <div class="nature-images">
-            <img src="images/nature/lucas-davies-8T1rL97YY84-unsplash.jpg" alt="1" width="640px" height="800px" id="nature1">
-            <img src="images/nature/val-toch-kMDCIX31EMs-unsplash.jpg" alt="2" width="640px" height="800px" id="nature2">
+        <div class="row-nature">
+            <div class="nature-photo">
+                <img src="images/nature/david-banning-BKrI50Vjm3I-unsplash.jpg" alt="1" id="nature1" class="border-top-left-radius">
+            </div>
+            <div class="nature-photo">
+                <img src="images/nature/devang-punia-L3aV7ZzwYE4-unsplash.jpg" alt="2" id="nature2" class="border-top-right-radius">
+            </div>
         </div>
-
-        <div class="nature-images">
-            <img src="images/nature/nathan-dumlao-ciO5L8pin8A-unsplash.jpg" alt="3" width="640px" height="800px" id="nature3"> 
-            <img src="images/nature/taylor-simpson-U6H-6J6-KmM-unsplash.jpg" alt="4 " width="640px " height="800px" id="nature4">
+        <div class="row-nature">
+            <div class="nature-photo">
+                <img src="images/nature/cody-fitzgerald-4NwnTnKwscI-unsplash.jpg" alt="3" id="nature3" class="border-bottom-left-radius"> 
+            </div>
+            <div class="nature-photo">
+                <img src="images/nature/ines-alvarez-fdez-hKug0W1tnVU-unsplash.jpg" alt="4"id="nature4"  class="border-bottom-right-radius">
+            </div>
         </div>
     </div>
     <h2 id="main-people" class="text-center"><span">People</span></h2>
     <div id="people" class="font-size photos__container">
-        <img src="images/human/omid-armin-xWVyLLUztv0-unsplash.jpg" alt="1" width="640px" height="800px" id="people1">
-        <img src="images/human/charles-gaudreault-qmTQW6aMNZU-unsplash.jpg" alt="2" width="640px" height="800px" id="people2">
-        <img src="images/human/joshua-fuller-07DnduZvZ28-unsplash.jpg" alt="3" width="640px" height="800px" id="people3">
-        <img src="images/human/mohammad-metri-U1ytD7WJvy0-unsplash.jpg" alt="4 " width="640px " height="800px" id="people4">
+        <img src="images/human/omid-armin-xWVyLLUztv0-unsplash.jpg" alt="people1"  class="border-top-left-radius">
+        <img src="images/human/charles-gaudreault-qmTQW6aMNZU-unsplash.jpg" alt="people2" class="border-top-right-radius">
+        <img src="images/human/joshua-fuller-07DnduZvZ28-unsplash.jpg" alt="people3" class="border-bottom-left-radius">
+        <img src="images/human/mohammad-metri-U1ytD7WJvy0-unsplash.jpg" alt="people4"  class="border-bottom-right-radius">
     </div>    
     <div id="about">
-        <h2 id="start-about">My Name</h2>
+        <h2 class="about-name">My Name</h2>
         <hr style=" width:200px; ">
-        <p >im a photographer and web designer.</p>
-        <p style="color: rgb(181, 190, 199);font-weight: 800;">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        <p class="about-header" >im a photographer and web designer.</p>
+        <p class="about-paragraph">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -96,32 +101,29 @@
         
         <div id="skills">
             <p class="skills-title">im really good at:</p>
-            <div>
+            <div class="skills-lists">
                 <i class="fas fa-images skills-list-label"><span style="letter-spacing: 5px;">Photography</span> </i> 
                 <div class="skills-list">
-                    <div class="skills-list-percentage">90%</div>
+                    <div class="skills-list-percentage percentage-90">90%</div>
                 </div>
 
             </div>
             
-            <div>
+            <div class="skills-lists">
                 <i class="fas fa-paint-brush skills-list-label"><span style="letter-spacing: 5px;">Web Designe</span></i> 
                 <div class="skills-list">
-                    <div class="skills-list-percentage">94%</div>
+                    <div class="skills-list-percentage percentage-94">94%</div>
                 </div>
-
             </div>
-            
-            <div>
+            <div class="skills-lists">
                 <i class="fas fa-biking skills-list-label"><span style="letter-spacing: 5px;">Biking</span></i>
                 <div class="skills-list">
-                    <div class="skills-list-percentage">99%</div>
+                    <div class="skills-list-percentage percentage-99">99%</div>
                 </div>
             </div>
         </div>
-        
         <div id="prouds">
-            <div class="gray-background">
+            <div class="gray-background" id="partners-div">
                 11+ Partners
             </div>
             <div>
@@ -134,8 +136,13 @@
                 180+ Meetings
             </div>
         </div>
-        <button class="resume-btn"><i class="fas fa-download "> Download Resume</i></button> 
-        <h2 class="text-center">My Prices</h2>
+        <div class="resumeBtn__container">
+            <button class="resume-btn">
+                <i class="fas fa-download "> Download Resume
+                </i>
+            </button> 
+        </div>
+        <h2 class="text-center price-header">My Prices</h2>
     </div>
         <div id="prices"> 
             <div id="table1" class="price-table__container">
@@ -203,7 +210,7 @@
 
         </div>
         <div id="contact" >
-            <h2 >Contact Me</h2>
+            <h2 class="contact-header">Contact Me</h2>
             <hr style=" width:200px;">
             <p><i class="fas fa-map-marker-alt"style="color:whitesmoke; font-size: 24px;"></i>&nbsp; <span style="color: white;font-size: medium;font-weight: 800;">Chicago, US</span></p>
               <p><i class="fas fa-phone-alt" style="color: whitesmoke; font-size: 24px;"></i> &nbsp;<span style="color:white;font-size: medium;font-weight: 800;">Phone: +00 151515</span></p>
@@ -211,12 +218,16 @@
         </div>
        
         <div id="form">
-            <p style="color: rgba(255, 255, 255, 0.89);font-size: medium;font-weight: 800;">Let's get in touch. Send me a message:</p>
+            <p class="form-header">Let's get in touch. Send me a message:</p>
             <form action="#">
-                <p><input type="text" placeholder="Name"  required="required"></p>
-                <p><input type="email" placeholder="Email" required="required"></p>
+                <p>
+                    <input type="text" placeholder="Name"  required="required">
+                </p>
+                <p>
+                    <input type="email" placeholder="Email" required="required">
+                </p>
                 <p><input type="text" placeholder="Subject"></p>
-                <p><textarea name="message" id="message" cols="30" rows="10"style="width: 100%;" placeholder="write me a message:)"></textarea></p>
+                <p><textarea name="message" id="message" cols="30" rows="10" placeholder="write me a message:)"></textarea></p>
                 <p class="text-center">
                     <input type="submit" value="send Message"id="send-message">
                 </p>
