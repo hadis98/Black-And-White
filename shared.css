@@ -1,0 +1,97 @@
+* {
+    font-family: "Itim", cursive;
+  }
+  
+  body {
+    margin: 0px auto;
+    background-color: black;
+  }
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-media__container {
+    width: 100%;
+  }
+  .social-media__links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  .social-media__links li {
+    margin-right: 1rem;
+  }
+  .social-media__link {
+    color: grey;
+    font-size: 36px;
+  }
+  .social-media__links i:hover {
+    font-weight: bolder;
+  }
+  #gotoTop {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    color: white;
+    font-size: 1.2em;
+    margin-right: 10px;
+    background-color: black;
+    padding: 10px;
+  }
+  #gotoEnd {
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    color: white;
+    font-size: 1.2em;
+    margin-right: 10px;
+    background-color: black;
+    padding: 10px;
+  }
+  #gotoEnd:hover {
+    background-color: white;
+    color: black;
+  }
+  #gotoTop:hover {
+    background-color: white;
+    color: black;
+  }
+  #menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 12%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.212);
+    text-align: center;
+    font-size: small;
+  }
+  #menu img{
+    width: 100%;
+  }
+  #menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #menu ul li{
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  #menu li:hover {
+    background-color: gray;
+  }
+  
+  #menu a{
+    display: inline-block;
+    width: 100%;
+  }
+  #menu p {
+    margin: 0px;
+  }
+  .menu-label{
+    color: whitesmoke;
+     font-size: 36px;
+  }
+  
