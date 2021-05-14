@@ -6,6 +6,26 @@
     margin: 0px auto;
     background-color: black;
   }
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  p {
+    color: whitesmoke;
+    font-size: 1.3em;
+    text-orientation: sideways;
+    text-transform: capitalize;
+  }
+  .width {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .font-size {
+    font-size: 0;
+  }
 .main-footer {
     display: flex;
     flex-direction: column;
@@ -93,5 +113,89 @@
   .menu-label{
     color: whitesmoke;
      font-size: 36px;
+  }
+  
+
+@media (max-width: 1200px) {
+
+    #prices {
+      width: 80%;
+    }
+    .resumeBtn__container {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 967px) {
+    #menu {
+      position: relative;
+      display: none;
+    }
+    #about ,#prices,#contact,#form{
+      width: 90%;
+    }
+    .photos__container {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #personal-photo img {
+      width: 80%;
+    }
+    #contact,
+    #form,
+    .photos__container {
+      width: 90%;
+    }
+    #form input {
+      width: 100%;
+    }
+    #prices {
+      flex-direction: column;
+    }
+    #prouds div {
+      font-size: medium;
+      padding: 0.5rem;
+    }
+    #table1,
+    #table2 {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 557px) {
+    #prices {
+      width: 100%;
+    }
+    #about {
+      width: 90%;
+    }
+    #prouds {
+      flex-direction: column;
+      height: auto;
+      border-radius: 0;
+    }
+    #prouds div{
+      border-radius: 0;
+    }
+    .photos__container {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+    .photos__container img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+    .nature-photo ,#personal-photo img ,table{
+      width: 100%;
+    }
+    .row-nature {
+      flex-direction: column;
+    }
+  
   }
   
