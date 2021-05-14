@@ -19,6 +19,31 @@ body {
 .collection-header {
   color: white;
 }
+.slideShow{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.slideShow__container{
+width: 50%;
+}
+.slideShow img{
+  width: 100%;
+}
+.prev,.next{
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.prev, .next{
+  display: inline-block;
+  cursor: pointer;
+}
+#nature-slide,#people-slide{
+  display: none;
+}
 #album {
   padding-top: 1px;
   text-decoration: none;
@@ -39,6 +64,7 @@ body {
   padding: 10px;
   /* color: black; */
   width: 200px;
+  cursor: pointer;
 }
 
 #album > a:hover {

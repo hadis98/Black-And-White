@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d8428dc404.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -21,9 +22,48 @@
     </div>
         <h2 class="collection-header text-center" id="colection">A Collection Of My Photos</h2>
     <div id="album" >
-        <a href="#main-flowers">Flowers</a>
-        <a href="#main-nature">Nature</a>
-        <a href="#main-people">People</a>
+        <a  id="flowers-collection">Flowers</a>
+        <a  id="nature-collection">Nature</a>
+        <a  id="people-collection">People</a>
+    </div>
+    <div class="slideShow" id="flowers-slide">
+        <div class="prev-link">
+            <a class="prev" id="flowers-prev">&#10094;</a>
+        </div>
+        <div class="slideShow__container">
+            <div class="numbertext"></div>
+            <img src="images/flowers/julia-kadel-8PyMrTiVK4E-unsplash_40.jpg" class="slideShow-image-flowers">
+            <div class="slide-text"></div>
+        </div> 
+        <div class="next-link">
+            <a class="next" id="flowers-next">&#10095;</a>
+        </div>       
+    </div>
+    <div class="slideShow" id="nature-slide">
+        <div class="prev-link">
+            <a class="prev" id="nature-prev">&#10094;</a>
+        </div>
+        <div class="slideShow__container">
+            <div class="numbertext"></div>
+            <img src="" class="slideShow-image-flowers">
+            <div class="slide-text"></div>
+        </div> 
+        <div class="next-link">
+            <a class="next" id="nature-next">&#10095;</a>
+        </div>       
+    </div>
+    <div class="slideShow" id="people-slide">
+        <div class="prev-link">
+            <a class="prev" id="people-prev">&#10094;</a>
+        </div>
+        <div class="slideShow__container">
+            <div class="numbertext"></div>
+            <img src="" class="slideShow-image-flowers">
+            <div class="slide-text"></div>
+        </div> 
+        <div class="next-link">
+            <a class="next" id="people-next">&#10095;</a>
+        </div>       
     </div>
     <h2 id="main-flowers" class="text-center"><span >Flowers</span></h2>
     <div id="flowers" class="font-size photos__container" >
