@@ -19,18 +19,18 @@ const people = [
   "images/human/mohammad-metri-U1ytD7WJvy0-unsplash.jpg",
 ];
 
-const flowersBtn = document.getElementById('flowers-collection');
-const natureBtn = document.getElementById('nature-collection');
-const peopleBtn = document.getElementById('people-collection');
+const flowersBtn = document.getElementById("flowers-collection");
+const natureBtn = document.getElementById("nature-collection");
+const peopleBtn = document.getElementById("people-collection");
 
-const flowers_slideshow = document.getElementById('flowers-slide');
-const nature_slideshow = document.getElementById('nature-slide');
-const people_slideshow = document.getElementById('people-slide');
+const flowers_slideshow = document.getElementById("flowers-slide");
+const nature_slideshow = document.getElementById("nature-slide");
+const people_slideshow = document.getElementById("people-slide");
 
-const slideShow_img = document.querySelector(".slideShow__container img");
-const slideShow_img_flowers = document.querySelector('#flowers-slide img');
-const slideShow_img_nature = document.querySelector('#nature-slide img');
-const slideShow_img_people = document.querySelector('#people-slide img');
+const slideShow_img_flowers = document.querySelector("#flowers-slide img");
+const slideShow_img_nature = document.querySelector("#nature-slide img");
+const slideShow_img_people = document.querySelector("#people-slide img");
+// prev and next buttons
 const prevBtnFlowrs = document.querySelector("#flowers-prev");
 const nextBtnFlowers = document.querySelector("#flowers-next");
 
@@ -40,63 +40,77 @@ const nextBtnNature = document.querySelector("#nature-next");
 const prevBtnPeople = document.querySelector("#people-prev");
 const nextBtnPeople = document.querySelector("#people-next");
 
-flowersBtn.addEventListener('click',()=>{
-    flowers_slideshow.style.display ="flex";
-    people_slideshow.style.display ="none";
-    nature_slideshow.style.display = "none";
-    slideShow_img_flowers.src = flowers[curIdx_flowers];
-})
-
-natureBtn.addEventListener('click',()=>{
-    flowers_slideshow.style.display ="none";
-    people_slideshow.style.display ="none";
-    nature_slideshow.style.display = "flex";
-    slideShow_img_nature.src = nature[curIdx_flowers];
-})
-
-peopleBtn.addEventListener('click',()=>{
-    flowers_slideshow.style.display ="none";
-    nature_slideshow.style.display = "none";
-    people_slideshow.style.display ="flex";
-    slideShow_img_people.src = people[curIdx_flowers];
-})
-
-
-
-
-prevBtnFlowrs.addEventListener("click", ()=>{
-    clickPrevBtn(flowers);
-});
-nextBtnFlowers.addEventListener("click", ()=>{
-    clickNextBtn(flowers)
-});
-
-prevBtnNature.addEventListener("click", ()=>{
-    clickPrevBtn(nature);
-});
-nextBtnNature.addEventListener("click", ()=>{
-    clickNextBtn(nature)
-});
-
-prevBtnPeople.addEventListener("click", ()=>{
-    clickPrevBtn(people);
-});
-nextBtnPeople.addEventListener("click", ()=>{
-    clickNextBtn(people)
-});
 
 let curIdx_flowers = 0;
 let curIdx_nature = 0;
 let curIdx_people = 0;
 
+flowersBtn.addEventListener("click", () => {
+  flowers_slideshow.style.display = "flex";
+  people_slideshow.style.display = "none";
+  nature_slideshow.style.display = "none";
+  slideShow_img_flowers.src = flowers[curIdx_flowers];
+});
+
+natureBtn.addEventListener("click", () => {
+  flowers_slideshow.style.display = "none";
+  people_slideshow.style.display = "none";
+  nature_slideshow.style.display = "flex";
+  slideShow_img_nature.src = nature[curIdx_flowers];
+});
+
+peopleBtn.addEventListener("click", () => {
+  flowers_slideshow.style.display = "none";
+  nature_slideshow.style.display = "none";
+  people_slideshow.style.display = "flex";
+  slideShow_img_people.src = people[curIdx_flowers];
+});
+
+prevBtnFlowrs.addEventListener("click", () => {
+  clickPrevBtn(flowers);
+});
+nextBtnFlowers.addEventListener("click", () => {
+  clickNextBtn(flowers);
+});
+
+prevBtnNature.addEventListener("click", () => {
+  clickPrevBtn(nature);
+});
+nextBtnNature.addEventListener("click", () => {
+  clickNextBtn(nature);
+});
+
+prevBtnPeople.addEventListener("click", () => {
+  clickPrevBtn(people);
+});
+nextBtnPeople.addEventListener("click", () => {
+  clickNextBtn(people);
+});
+
+
 function clickPrevBtn(array) {
   let index;
   if (array === flowers) {
-    index = curIdx_flowers;
+    if(curIdx_flowers>0){
+        curIdx_flowers--;
+    }
+    else if(curIdx_flowers ===0){
+        curIdx_flowers = flowers.length-1;
+    }
   } else if (array === nature) {
-    index = curIdx_nature;
+    if(curIdx_nature>0){
+        curIdx_nature--;
+    }
+    else if(curIdx_nature ===0){
+        curIdx_nature = nature.length-1;
+    }
   } else if (array === people) {
-    index = curIdx_people;
+    if(curIdx_people>0){
+        curIdx_people--;
+    }
+    else if(curIdx_people ===0){
+        curIdx_people = people.length-1;
+    }
   }
 
   if (index > 0) {
@@ -105,41 +119,34 @@ function clickPrevBtn(array) {
     index = array.length - 1;
   }
 
-  if (array === flowers) {
-    curIdx_flowers = index;
-  } else if (array === nature) {
-    curIdx_nature = index;
-  } else if (array === people) {
-    curIdx_people = index;
-  }
+
   changeImage(array);
 }
 function clickNextBtn(array) {
-  let index;
   if (array === flowers) {
-    index = curIdx_flowers;
+    if (curIdx_flowers < flowers.length - 1) {
+      curIdx_flowers++;
+    } else if (curIdx_flowers === flowers.length - 1) {
+      curIdx_flowers = 0;
+    }
   } else if (array === nature) {
-    index = curIdx_nature;
+    if (curIdx_nature < nature.length - 1) {
+      curIdx_nature++;
+    } else if (curIdx_nature === nature.length - 1) {
+      curIdx_nature = 0;
+    }
   } else if (array === people) {
-    index = curIdx_people;
+    if (curIdx_people < people.length - 1) {
+      curIdx_people++;
+    } else if (curIdx_people === people.length - 1) {
+      curIdx_people = 0;
+    }
   }
-  if (index < array.length - 1) {
-    index++;
-  } else if (index === array.length - 1) {
-    index = 0;
-  }
-  if (array === flowers) {
-    curIdx_flowers = index;
-  } else if (array === nature) {
-    curIdx_nature = index;
-  } else if (array === people) {
-    curIdx_people = index;
-  }
+
   changeImage(array);
 }
 
 function changeImage(array) {
-  let index;
   if (array === flowers) {
     slideShow_img_flowers.src = flowers[curIdx_flowers];
   } else if (array === nature) {
