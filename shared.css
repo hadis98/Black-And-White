@@ -1,55 +1,64 @@
 * {
     font-family: "Itim", cursive;
-  }
-  
-  body {
+}
+
+body {
     margin: 0px auto;
     background-color: black;
-  }
-  a {
+}
+
+a {
     text-align: center;
     text-decoration: none;
     color: whitesmoke;
-  }
-  
-  p {
+}
+
+p {
     color: whitesmoke;
     font-size: 1.3em;
     text-orientation: sideways;
     text-transform: capitalize;
-  }
-  .width {
+}
+
+.width {
     width: 70%;
     margin: 0 auto;
-  }
-  
-  .font-size {
+}
+
+.font-size {
     font-size: 0;
-  }
+}
+
 .main-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .social-media__container {
+}
+
+.social-media__container {
     width: 100%;
-  }
-  .social-media__links {
+}
+
+.social-media__links {
     list-style-type: none;
     display: flex;
     justify-content: center;
-  }
-  .social-media__links li {
+}
+
+.social-media__links li {
     margin-right: 1rem;
-  }
-  .social-media__link {
+}
+
+.social-media__link {
     color: grey;
     font-size: 36px;
-  }
-  .social-media__links i:hover {
+}
+
+.social-media__links i:hover {
     font-weight: bolder;
-  }
-  #gotoTop {
+}
+
+#gotoTop {
     position: fixed;
     bottom: 10px;
     right: 5px;
@@ -58,8 +67,9 @@
     margin-right: 10px;
     background-color: black;
     padding: 10px;
-  }
-  #gotoEnd {
+}
+
+#gotoEnd {
     position: fixed;
     top: 10px;
     right: 5px;
@@ -68,16 +78,19 @@
     margin-right: 10px;
     background-color: black;
     padding: 10px;
-  }
-  #gotoEnd:hover {
+}
+
+#gotoEnd:hover {
     background-color: white;
     color: black;
-  }
-  #gotoTop:hover {
+}
+
+#gotoTop:hover {
     background-color: white;
     color: black;
-  }
-  #menu {
+}
+
+#menu {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -86,128 +99,209 @@
     background-color: rgba(128, 128, 128, 0.212);
     text-align: center;
     font-size: small;
-  }
-  #menu img{
+}
+
+#menu img {
     width: 100%;
-  }
-  #menu ul{
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  #menu ul li{
+}
+
+.menu-label {
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+.menu-links {
+    width: 100%;
+}
+
+#menu ul li {
+    display: block;
     margin-top: 0.5rem;
     cursor: pointer;
-  }
-  #menu li:hover {
+    width: 100%;
+}
+
+#menu li:hover,
+#menu2 li:hover {
     background-color: gray;
-  }
-  
-  #menu a{
+}
+
+#menu a,
+#menu2 a {
     display: inline-block;
     width: 100%;
-  }
-  #menu p {
+}
+
+#menu p,
+#menu2 p {
     margin: 0px;
-  }
-  .menu-label{
-    color: whitesmoke;
-     font-size: 36px;
-  }
-  
+}
+
+#menu2 {
+    width: 100%;
+    display: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(139, 139, 139);
+    color: black;
+}
+
+#menu2 img {
+    width: 50%;
+}
+
+#menu2 ul li a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu2 p {
+    color: black;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-icon,
+.close-menu {
+    color: white;
+    position: fixed;
+    top: 1%;
+    right: 3%;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-link-li .menu-label,
+.close-menu {
+    color: black;
+}
 
 @media (max-width: 1200px) {
-
     #prices {
-      width: 80%;
+        width: 80%;
     }
     .resumeBtn__container {
-      justify-content: center;
+        justify-content: center;
     }
-  }
-  
-  @media (max-width: 967px) {
+}
+
+@media (max-width: 967px) {
     #menu {
-      position: relative;
-      display: none;
+        display: none;
     }
-    #about ,#prices,#contact,#form{
-      width: 90%;
-    }
-    .photos__container {
-      width: 70%;
-    }
-    .slideShow{
+    #about,
+    #prices,
+    #contact,
+    #form {
         width: 90%;
     }
-  }
-  
-  @media (max-width: 768px) {
+    .photos__container {
+        width: 70%;
+    }
+    .slideShow {
+        width: 90%;
+    }
+    .navbar-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
     #personal-photo img {
-      width: 80%;
+        width: 80%;
     }
     #contact,
     #form,
-    .photos__container,.slideShow {
-      width: 90%;
+    .photos__container,
+    .slideShow {
+        width: 90%;
     }
     #form input {
-      width: 100%;
+        width: 100%;
     }
     #prices {
-      flex-direction: column;
+        flex-direction: column;
     }
     #prouds div {
-      font-size: medium;
-      padding: 0.5rem;
+        font-size: medium;
+        padding: 0.5rem;
     }
     #table1,
     #table2 {
-      width: 80%;
-      margin: 0 auto;
+        width: 80%;
+        margin: 0 auto;
     }
-  }
-  
-  @media (max-width: 557px) {
-    #prices,.slideShow {
-      width: 100%;
+}
+
+@media (max-width: 557px) {
+    #prices,
+    .slideShow {
+        width: 100%;
     }
-    .slideShow{
+    .slideShow {
         height: 40vh;
     }
-    .next,.prev{
+    .next,
+    .prev {
         font-size: 1.5rem;
     }
     #about {
-      width: 90%;
+        width: 90%;
     }
     #prouds {
-      flex-direction: column;
-      height: auto;
-      border-radius: 0;
+        flex-direction: column;
+        height: auto;
+        border-radius: 0;
     }
-    #prouds div{
-      border-radius: 0;
+    #prouds div {
+        border-radius: 0;
     }
     .photos__container {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
     }
     .photos__container img {
-      width: 100%;
-      border-radius: 1rem;
-      margin-top: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        margin-top: 1rem;
     }
-    .nature-photo ,#personal-photo img ,table{
-      width: 100%;
+    .nature-photo,
+    #personal-photo img,
+    table {
+        width: 100%;
     }
     .row-nature {
-      flex-direction: column;
+        flex-direction: column;
     }
-    .resume-btn{
+    .resume-btn {
         font-size: 1.2rem;
     }
-  
-  }
-  
+}
+
+#menu .press-closeMenuBtn {
+    display: block !important;
+    width: 100%;
+    height: 77%;
+    background-color: black;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
