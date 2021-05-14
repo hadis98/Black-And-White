@@ -1,282 +1,332 @@
-
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 #welcome {
-  color: white;
-  text-transform: capitalize;
-  font-size: 5em;
-  padding-top: 30px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 5em;
+    padding-top: 30px;
 }
+
 .collection-header {
-  color: white;
+    color: white;
 }
-.slideShow{
-  width: 70%;
-  height: 50vh;
-  margin: 3rem auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+
+.slideShow {
+    width: 70%;
+    max-width: 1283px;
+    height: 50vh;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.slideShow__container{
-width: 50%;
-height: 100%;
+
+.slideShow__container {
+    width: 50%;
+    height: 100%;
 }
-.slideShow img{
-  width: 100%;
-  height: 100%;
+
+.slideShow img {
+    width: 100%;
+    height: 100%;
 }
-.prev,.next{
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
+
+.prev,
+.next {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
 }
-.prev, .next{
-  display: inline-block;
-  cursor: pointer;
+
+.prev,
+.next {
+    display: inline-block;
+    cursor: pointer;
 }
-#nature-slide,#people-slide{
-  display: none;
+
+#nature-slide,
+#people-slide {
+    display: none;
 }
+
 #album {
-  padding-top: 1px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.3em;
-  width: 70%;
-  color: white;
-  margin: 0 auto;
+    padding-top: 1px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+    width: 70%;
+    color: white;
+    margin: 0 auto;
 }
 
-#album > p {
-  /* color: black; */
-  margin: 10px 0;
+#album>p {
+    margin: 10px 0;
 }
 
-#album > a {
-  display: inline-block;
-  padding: 10px;
-  /* color: black; */
-  width: 200px;
-  cursor: pointer;
+#album>a {
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
 }
 
-#album > a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 3px 3px 3px 3px;
+#album>a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px 3px 3px 3px;
 }
+
 #main {
-  border: 5px solid rgba(116, 105, 105, 0.781);
+    border: 5px solid rgba(116, 105, 105, 0.781);
 }
-
 
 #about {
-  margin: 0 auto;
-  width: 70%;
+    margin: 0 auto;
+    width: 70%;
 }
-#about hr,#contact hr{
-  width: 10rem;
+
+#about hr,
+#contact hr {
+    width: 10rem;
 }
 
 .about-name {
-  color: white;
-  font-family: "Itim", cursive;
+    color: white;
+    font-family: "Itim", cursive;
 }
+
 .about-header {
-  font-size: x-large;
+    font-size: x-large;
 }
+
 .about-paragraph {
-  color: rgb(181, 190, 199);
-  font-weight: 800;
-  font-size: large;
+    color: rgb(181, 190, 199);
+    font-weight: 800;
+    font-size: large;
 }
+
 .skills-title {
-  font-size: x-large;
+    font-size: x-large;
 }
-.skill-text{
-  letter-spacing: 5px;
+
+.skill-text {
+    letter-spacing: 5px;
 }
+
 .skills-lists {
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
-.skills-lists i{
-  padding: 00.5rem;
+
+.skills-lists i {
+    padding: 00.5rem;
 }
+
 .skills-list {
-  background-color: rgba(112, 128, 144, 0.301);
-  border-radius: 0.5rem;
+    background-color: rgba(112, 128, 144, 0.301);
+    border-radius: 0.5rem;
 }
+
 .skills-list-percentage {
-  background-color: rgba(240, 255, 246, 0.794);
-  text-align: center;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+    background-color: rgba(240, 255, 246, 0.794);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
+
 .percentage-90 {
-  width: 90%;
+    width: 90%;
 }
+
 .percentage-94 {
-  width: 94%;
+    width: 94%;
 }
+
 .percentage-99 {
-  width: 99%;
+    width: 99%;
 }
+
 .skills-list-label {
-  color: whitesmoke;
-  font-size: 24px;
+    color: whitesmoke;
+    font-size: 24px;
 }
+
 .resumeBtn__container {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1rem;
 }
+
 .resume-btn {
-  text-align: center;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
-  padding: 0.8rem 1rem;
-  border: none;
-  outline: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
 }
+
 .resume-btn:hover {
-  background-color: gray;
-  color: whitesmoke;
+    background-color: gray;
+    color: whitesmoke;
 }
+
 #prouds {
-  margin: 3rem auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: gainsboro;
-  height: 10rem;
-  border-radius: 0.5rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    height: 10rem;
+    border-radius: 0.5rem;
 }
+
 #prouds div {
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
 }
+
 #partners-div {
-  border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
+
 .gray-background {
-  background-color: grey;
+    background-color: grey;
 }
+
 #prices {
-  margin: 0 auto;
-  width: 70%;
-  text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
 }
+
 .price-table__container {
-  width: 100%;
+    width: 100%;
 }
+
 .price-table {
-  background-color: darkgray;
-  margin: 0 auto;
+    background-color: darkgray;
+    margin: 0 auto;
 }
+
 .price-header {
-  color: white;
-  font-family: "Itim", cursive;
+    color: white;
+    font-family: "Itim", cursive;
 }
+
 .price-per-month {
-  font-size: 2em;
-  color: black;
+    font-size: 2em;
+    color: black;
 }
+
 #table-1:hover {
-  background-color: #d6d5d5;
+    background-color: #d6d5d5;
 }
+
 #table-2:hover {
-  background-color: #d6d5d5;
+    background-color: #d6d5d5;
 }
 
 table {
-  width: 80%;
+    width: 80%;
 }
+
 table,
 td,
 th {
-  border: rgba(8, 5, 5, 0.835) solid 1px;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.5rem;
+    border: rgba(8, 5, 5, 0.835) solid 1px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.5rem;
 }
-td {
-  padding: 1.5rem;
-}
-th {
-  padding: 3rem;
 
-  background-color: grey;
-  color: whitesmoke;
+td {
+    padding: 1.5rem;
+}
+
+th {
+    padding: 3rem;
+    background-color: grey;
+    color: whitesmoke;
 }
 
 .signUp-btn {
-  border: none;
-  border-radius: 0.5rem;
-  outline: none;
-  width: 10rem;
-  padding: 0.8rem;
-  font-size: medium;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 10rem;
+    padding: 0.8rem;
+    font-size: medium;
 }
 
 #contact {
-  width: 70%;
-  margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
+
 .contact-header {
-  color: white;
+    color: white;
 }
-.contact-label{
-  color:whitesmoke; font-size: 24px;
+
+.contact-label {
+    color: whitesmoke;
+    font-size: 24px;
 }
-.contact-text{
-  color: white;
-  font-size: medium;
-  font-weight: 800;
+
+.contact-text {
+    color: white;
+    font-size: medium;
+    font-weight: 800;
 }
+
 #form {
-  width: 70%;
-  margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
+
 .form-header {
-  color: rgba(255, 255, 255, 0.89);
-  font-size: medium;
-  font-weight: 800;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: medium;
+    font-weight: 800;
 }
+
 #form input {
-  border-radius: 0.5rem;
-  border: none;
-  padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
 }
+
 #message {
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
 }
+
 #send-message {
-  border-radius: 0.5rem;
-  border: none;
-  font-size: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 2rem;
 }
+
 #send-message:hover {
-  background-color: gray;
-  color: white;
-  outline: none;
-  border: none;
+    background-color: gray;
+    color: white;
+    outline: none;
+    border: none;
 }
+
 #prices {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
+    outline: none;
 }
