@@ -1,22 +1,22 @@
 const flowers = [
-    "images/flowers/julia-kadel-8PyMrTiVK4E-unsplash_40.jpg",
-    "images/flowers/anca-gabriela-zosin-OYEsm66ynm4-unsplash.jpg",
-    "images/flowers/priscilla-du-preez-5QQ-YCp0beM-unsplash.jpg",
-    "images/flowers/ryan-song-ttCNLEiIvjM-unsplash.jpg",
+    "./assets/images/flowers/julia-kadel-8PyMrTiVK4E-unsplash_40.jpg",
+    "./assets/images/flowers/anca-gabriela-zosin-OYEsm66ynm4-unsplash.jpg",
+    "./assets/images/flowers/priscilla-du-preez-5QQ-YCp0beM-unsplash.jpg",
+    "./assets/images/flowers/ryan-song-ttCNLEiIvjM-unsplash.jpg",
 ];
 
 const nature = [
-    "images/nature/cody-fitzgerald-4NwnTnKwscI-unsplash.jpg",
-    "images/nature/david-banning-BKrI50Vjm3I-unsplash.jpg",
-    "images/nature/devang-punia-L3aV7ZzwYE4-unsplash.jpg",
-    "images/nature/ines-alvarez-fdez-hKug0W1tnVU-unsplash.jpg",
+    "./assets/images/nature/cody-fitzgerald-4NwnTnKwscI-unsplash.jpg",
+    "./assets/images/nature/david-banning-BKrI50Vjm3I-unsplash.jpg",
+    "./assets/images/nature/devang-punia-L3aV7ZzwYE4-unsplash.jpg",
+    "./assets/images/nature/ines-alvarez-fdez-hKug0W1tnVU-unsplash.jpg",
 ];
 
 const people = [
-    "images/human/omid-armin-xWVyLLUztv0-unsplash.jpg",
-    "images/human/charles-gaudreault-qmTQW6aMNZU-unsplash.jpg",
-    "images/human/joshua-fuller-07DnduZvZ28-unsplash.jpg",
-    "images/human/mohammad-metri-U1ytD7WJvy0-unsplash.jpg",
+    "./assets/images/human/omid-armin-xWVyLLUztv0-unsplash.jpg",
+    "./assets/images/human/charles-gaudreault-qmTQW6aMNZU-unsplash.jpg",
+    "./assets/images/human/joshua-fuller-07DnduZvZ28-unsplash.jpg",
+    "./assets/images/human/mohammad-metri-U1ytD7WJvy0-unsplash.jpg",
 ];
 
 const flowersBtn = document.getElementById("flowers-collection");
