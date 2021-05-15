@@ -20,6 +20,10 @@ p {
     text-transform: capitalize;
 }
 
+button {
+    cursor: pointer;
+}
+
 .width {
     width: 70%;
     margin: 0 auto;
@@ -88,6 +92,10 @@ p {
 #gotoTop:hover {
     background-color: white;
     color: black;
+}
+
+input[type=submit] {
+    cursor: pointer;
 }
 
 #menu {
@@ -203,11 +211,9 @@ ul {
 }
 
 @media(min-width:968px) {
-    #menu2 {
-        position: relative;
-        display: none;
-    }
-    .navbar-icon {
+    #menu2,
+    .navbar-icon,
+    .close-menu {
         position: relative;
         display: none;
     }
