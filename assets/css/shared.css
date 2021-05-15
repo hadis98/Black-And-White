@@ -202,6 +202,17 @@ ul {
     }
 }
 
+@media(min-width:968px) {
+    #menu2 {
+        position: relative;
+        display: none;
+    }
+    .navbar-icon {
+        position: relative;
+        display: none;
+    }
+}
+
 @media (max-width: 967px) {
     #menu {
         display: none;
