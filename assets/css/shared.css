@@ -111,6 +111,7 @@ input[type=submit] {
 
 #menu img {
     width: 100%;
+    opacity: 0.6;
 }
 
 ul {
