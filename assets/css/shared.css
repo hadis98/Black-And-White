@@ -322,7 +322,8 @@ ul {
     .prev {
         font-size: 1.5rem;
     }
-    #about {
+    #about,
+    .chooseImg {
         width: 90%;
     }
     #prouds {

@@ -43,11 +43,8 @@ const nextBtnPeople = document.querySelector("#people-next");
 
 const chooseImg_flowers_container =
     document.getElementById("chooseImg_flowers");
-const chooseImg_nature_container =
-    document.getElementById("chooseImg_nature");
-const chooseImg_people_container =
-    document.getElementById("chooseImg_people");
-
+const chooseImg_nature_container = document.getElementById("chooseImg_nature");
+const chooseImg_people_container = document.getElementById("chooseImg_people");
 
 let curIdx_flowers = 0;
 let curIdx_nature = 0;
@@ -104,145 +101,129 @@ nextBtnPeople.addEventListener("click", () => {
     clickNextBtn(people);
 });
 
-for (let i = 0; i < flowers.length; i++) {
-    const imgDiv = document.createElement("div");
-    imgDiv.classList.add("column-img");
-    imgDiv.classList.add("column-img-flowers");
-    const image = document.createElement("img");
-    image.src = flowers[i];
-    imgDiv.appendChild(image);
-    chooseImg_flowers_container.appendChild(imgDiv);
+function create_columnImages(array, type) {
+    for (let i = 0; i < array.length; i++) {
+        const imgDiv = document.createElement("div");
+        imgDiv.classList.add("column-img");
+        imgDiv.classList.add(`column-img-${type}`);
+        const image = document.createElement("img");
+        image.src = array[i];
+        imgDiv.appendChild(image);
+        if (type === "flowers") {
+            chooseImg_flowers_container.appendChild(imgDiv);
+        } else if (type === "nature") {
+            chooseImg_nature_container.appendChild(imgDiv);
+        } else if (type === "people") {
+            chooseImg_people_container.appendChild(imgDiv);
+        }
+    }
 }
-for (let i = 0; i < nature.length; i++) {
-    const imgDiv = document.createElement("div");
-    imgDiv.classList.add("column-img");
-    imgDiv.classList.add("column-img-nature");
-    const image = document.createElement("img");
-    image.src = nature[i];
-    imgDiv.appendChild(image);
-    chooseImg_nature_container.appendChild(imgDiv);
-}
-for (let i = 0; i < people.length; i++) {
-    const imgDiv = document.createElement("div");
-    imgDiv.classList.add("column-img");
-    imgDiv.classList.add("column-img-people");
-    const image = document.createElement("img");
-    image.src = people[i];
-    imgDiv.appendChild(image);
-    chooseImg_people_container.appendChild(imgDiv);
-}
-
+create_columnImages(flowers, "flowers");
+create_columnImages(nature, "nature");
+create_columnImages(people, "people");
 const columnImages_flowers = document.querySelectorAll(".column-img-flowers");
 const columnImages_nature = document.querySelectorAll(".column-img-nature");
 const columnImages_people = document.querySelectorAll(".column-img-people");
-for (let i = 0; i < columnImages_flowers.length; i++) {
-    columnImages_flowers[i].addEventListener("click", () => {
-        changeColumnImage(i, columnImages_flowers, slideShow_img_flowers, flowers, 'flowers');
-    });
-}
 
-for (let i = 0; i < columnImages_nature.length; i++) {
-    columnImages_nature[i].addEventListener("click", () => {
-        changeColumnImage(i, columnImages_nature, slideShow_img_nature, nature, 'nature');
-    });
+function click_columnImages(array, type) {
+    for (let i = 0; i < array.length; i++) {
+        array[i].addEventListener("click", () => {
+            if (type === "flowers")
+                changeColumnImage(i, array, slideShow_img_flowers, flowers, "flowers");
+            else if (type === "nature")
+                changeColumnImage(i, array, slideShow_img_nature, nature, "nature");
+            else if (type === "people")
+                changeColumnImage(i, array, slideShow_img_people, people, "people");
+        });
+    }
 }
-
-for (let i = 0; i < columnImages_people.length; i++) {
-    columnImages_people[i].addEventListener("click", () => {
-        changeColumnImage(i, columnImages_people, slideShow_img_people, people, 'people');
-    });
-}
+click_columnImages(columnImages_flowers, 'flowers');
+click_columnImages(columnImages_nature, 'nature');
+click_columnImages(columnImages_people, 'people');
 
 function changeColumnImage(index, array, slideShowimg, arr, type) {
     for (i = 0; i < array.length; i++)
-        array[i].className = array[i].className.replace(
-            " active",
-            ""
-        );
+        array[i].className = array[i].className.replace(" active", "");
     array[index].classList += " active";
     slideShowimg.src = arr[index];
-    if (type === 'flowers') {
+    if (type === "flowers") {
         curIdx_flowers = index;
-
-    } else if (type === 'nature') {
+    } else if (type === "nature") {
         curIdx_nature = index;
-    } else if (type === 'people') {
+    } else if (type === "people") {
         curIdx_people = index;
     }
 }
 
 function clickPrevBtn(array) {
+    let columnImages;
     if (array === flowers) {
         if (curIdx_flowers > 0) {
             curIdx_flowers--;
         } else if (curIdx_flowers === 0) {
             curIdx_flowers = flowers.length - 1;
         }
+        columnImages = columnImages_flowers;
     } else if (array === nature) {
         if (curIdx_nature > 0) {
             curIdx_nature--;
         } else if (curIdx_nature === 0) {
             curIdx_nature = nature.length - 1;
         }
+        columnImages = columnImages_nature;
     } else if (array === people) {
         if (curIdx_people > 0) {
             curIdx_people--;
         } else if (curIdx_people === 0) {
             curIdx_people = people.length - 1;
         }
+        columnImages = columnImages_people;
     }
-    changeImage(array);
+    changeImage(array, columnImages);
 }
 
 function clickNextBtn(array) {
+    let columnImages;
     if (array === flowers) {
         if (curIdx_flowers < flowers.length - 1) {
             curIdx_flowers++;
         } else if (curIdx_flowers === flowers.length - 1) {
             curIdx_flowers = 0;
         }
+        columnImages = columnImages_flowers;
     } else if (array === nature) {
         if (curIdx_nature < nature.length - 1) {
             curIdx_nature++;
         } else if (curIdx_nature === nature.length - 1) {
             curIdx_nature = 0;
         }
+        columnImages = columnImages_nature;
     } else if (array === people) {
         if (curIdx_people < people.length - 1) {
             curIdx_people++;
         } else if (curIdx_people === people.length - 1) {
             curIdx_people = 0;
         }
+        columnImages = columnImages_people;
     }
 
-    changeImage(array);
+    changeImage(array, columnImages);
 }
 
-function changeImage(array) {
+function changeImage(array, columnImages) {
+    for (i = 0; i < columnImages.length; i++)
+        columnImages[i].className = columnImages[i].className.replace(
+            " active",
+            ""
+        );
     if (array === flowers) {
         slideShow_img_flowers.src = flowers[curIdx_flowers];
-        for (i = 0; i < columnImages_flowers.length; i++)
-            columnImages_flowers[i].className = columnImages_flowers[i].className.replace(
-                " active",
-                ""
-            );
         columnImages_flowers[curIdx_flowers].classList += " active";
     } else if (array === nature) {
         slideShow_img_nature.src = nature[curIdx_nature];
-        for (i = 0; i < columnImages_nature.length; i++)
-            columnImages_nature[i].className = columnImages_nature[i].className.replace(
-                " active",
-                ""
-            );
         columnImages_nature[curIdx_nature].classList += " active";
     } else if (array === people) {
         slideShow_img_people.src = people[curIdx_people];
-        for (i = 0; i < columnImages_people.length; i++)
-            columnImages_people[i].className = columnImages_people[i].className.replace(
-                " active",
-                ""
-            );
         columnImages_people[curIdx_people].classList += " active";
     }
-    slideShow_container.classList.add("fadeIn");
 }
