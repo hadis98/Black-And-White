@@ -270,7 +270,8 @@ ul {
     #form {
         width: 90%;
     }
-    .photos__container {
+    .photos__container,
+    .chooseImg {
         width: 70%;
     }
     .slideShow {
@@ -310,7 +311,8 @@ ul {
 
 @media (max-width: 557px) {
     #prices,
-    .slideShow {
+    .slideShow,
+    #album {
         width: 100%;
     }
     .slideShow {
@@ -346,7 +348,8 @@ ul {
     table {
         width: 100%;
     }
-    .row-nature {
+    .row-nature,
+    #album {
         flex-direction: column;
     }
     .resume-btn {
