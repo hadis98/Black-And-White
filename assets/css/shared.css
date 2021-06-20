@@ -240,6 +240,10 @@ ul {
     z-index: 2;
 }
 
+#down {
+    font-size: 1.4rem;
+}
+
 @media (max-width: 1200px) {
     #prices {
         width: 80%;
@@ -283,6 +287,26 @@ ul {
     }
     #personal-photo {
         width: 50%;
+    }
+    #album a {
+        font-size: 1.3rem;
+    }
+    .collection-header {
+        font-size: 1.5rem;
+    }
+    #form input,
+    #form #message {
+        font-size: 1.4rem;
+    }
+    #contact {
+        font-size: 1.4rem;
+    }
+    .menu-link-li i,
+    .menu-link-li p {
+        font-size: 1.5rem;
+    }
+    .social-media__links i {
+        font-size: 1.8rem;
     }
 }
 
