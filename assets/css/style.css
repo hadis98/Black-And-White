@@ -5,17 +5,27 @@
 #welcome {
     color: white;
     text-transform: capitalize;
-    font-size: 5em;
+    font-size: 2rem;
     padding-top: 30px;
+}
+
+#personal-photo {
+    width: 25%;
+    margin: 0 auto;
+}
+
+#personal-photo img {
+    width: 100%;
 }
 
 .collection-header {
     color: white;
-    margin: 2rem 0;
+    margin: 0.9rem 0;
+    font-size: 1.2rem;
 }
 
 .slideShow {
-    width: 55%;
+    width: 40%;
     height: 50vh;
     margin: 3rem auto;
     display: flex;
@@ -24,7 +34,7 @@
 }
 
 .slideShow__container {
-    width: 50%;
+    width: 45%;
     height: 100%;
 }
 
@@ -37,7 +47,7 @@
 .next {
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 0.7rem;
 }
 
 .prev,
@@ -47,11 +57,11 @@
 }
 
 .chooseImg {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0.8rem;
+    grid-column-gap: 0.5rem;
 }
 
 .column-img {
@@ -93,7 +103,7 @@
     padding: 0.5rem;
     width: 100%;
     cursor: pointer;
-    font-size: 1.6em;
+    font-size: 0.6rem;
 }
 
 #album a:hover {
@@ -121,17 +131,17 @@
 }
 
 .about-header {
-    font-size: x-large;
+    font-size: 1.3rem;
 }
 
 .about-paragraph {
     color: rgb(181, 190, 199);
     font-weight: 800;
-    font-size: large;
+    font-size: 0.8rem;
 }
 
 .skills-title {
-    font-size: x-large;
+    font-size: 1.1rem;
 }
 
 .skill-text {
@@ -143,7 +153,7 @@
 }
 
 .skills-lists i {
-    padding: 00.5rem;
+    padding: 0.5rem;
 }
 
 .skills-list {
@@ -172,7 +182,7 @@
 
 .skills-list-label {
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .resumeBtn__container {
@@ -185,8 +195,8 @@
 .resume-btn {
     text-align: center;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
-    padding: 0.8rem 1rem;
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
     border: none;
     outline: none;
 }
@@ -201,7 +211,7 @@
     display: flex;
     justify-content: space-between;
     background-color: gainsboro;
-    height: 10rem;
+    height: 6rem;
     border-radius: 0.5rem;
 }
 
@@ -210,7 +220,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: 1rem;
 }
 
 #partners-div {
@@ -228,7 +238,7 @@
 }
 
 .price-table__container {
-    width: 100%;
+    width: 70%;
 }
 
 .price-table {
@@ -242,7 +252,7 @@
 }
 
 .price-per-month {
-    font-size: 2em;
+    font-size: 1.3rem;
     color: black;
 }
 
@@ -255,7 +265,7 @@
 }
 
 table {
-    width: 80%;
+    width: 65%;
 }
 
 table,
@@ -264,15 +274,15 @@ th {
     border: rgba(8, 5, 5, 0.835) solid 1px;
     border-collapse: collapse;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 td {
-    padding: 1.5rem;
+    padding: 0.7rem;
 }
 
 th {
-    padding: 3rem;
+    padding: 1rem;
     background-color: grey;
     color: whitesmoke;
 }
@@ -281,9 +291,9 @@ th {
     border: none;
     border-radius: 0.5rem;
     outline: none;
-    width: 10rem;
-    padding: 0.8rem;
-    font-size: medium;
+    width: 30%;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
 }
 
 .signUp-btn:hover {
@@ -302,12 +312,12 @@ th {
 
 .contact-label {
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .contact-text {
     color: white;
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 800;
 }
 
@@ -318,18 +328,18 @@ th {
 
 .form-header {
     color: rgba(255, 255, 255, 0.89);
-    font-size: medium;
+    font-size: 1.2rem;
     font-weight: 800;
 }
 
 #form input {
     border-radius: 0.5rem;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.7rem;
 }
 
 #message {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.7rem;
     border-radius: 1rem;
     width: 100%;
 }
@@ -337,7 +347,7 @@ th {
 #send-message {
     border-radius: 0.5rem;
     border: none;
-    font-size: 2rem;
+    font-size: 0.7rem;
 }
 
 #send-message:hover {

@@ -1,5 +1,5 @@
 .photos__container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -55,4 +55,8 @@
 
 .white-header {
     color: white;
+}
+
+h2 {
+    font-size: 1.2rem;
 }
