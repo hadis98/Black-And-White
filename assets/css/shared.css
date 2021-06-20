@@ -241,7 +241,7 @@ ul {
 }
 
 #down {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 @media (max-width: 1200px) {
@@ -289,24 +289,33 @@ ul {
         width: 50%;
     }
     #album a {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
     .collection-header {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     #form input,
     #form #message {
         font-size: 1.4rem;
     }
-    #contact {
-        font-size: 1.4rem;
+    .contact-text {
+        font-size: 1.7rem;
     }
     .menu-link-li i,
     .menu-link-li p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .social-media__links i {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+    .about-paragraph {
+        font-size: 1.4rem;
+    }
+    .skills-list-label {
+        font-size: 1.5rem;
+    }
+    .skills-title {
+        font-size: 1.6rem;
     }
 }
 
@@ -324,7 +333,7 @@ ul {
         width: 100%;
     }
     #prouds div {
-        font-size: 0.8rem;
+        font-size: 1.4rem;
         padding: 0.5rem;
     }
     #table1,
@@ -335,8 +344,10 @@ ul {
     #personal-photo {
         width: 60%;
     }
-    table {
+    th,
+    td {
         width: 80%;
+        font-size: 1.4rem;
     }
     .signUp-btn {
         width: 45%;
